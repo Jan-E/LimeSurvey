@@ -237,7 +237,7 @@ abstract class Token extends Dynamic
      */
     public static function generateRandomToken($iTokenLength)
     {
-        return str_replace(array('~', '_'), array('a', 'z'), Yii::app()->securityManager->generateRandomString($iTokenLength));
+        return str_replace(array('~','_','0','O','1','l','I'),array('a','z','7','P','8','k','K'), Yii::app()->securityManager->generateRandomString($iTokenLength));
     }
 
     /**
